@@ -1,5 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const AppPresenter = () => "stuff";
+const AppPresenter = () => (
+    
+);
 
 export default AppPresenter;
