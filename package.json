@@ -1,0 +1,19 @@
+{
+  "name": "nomadguide-cm-pwa",
+  "version": "1.0.0",
+  "description": "Nomad Guide: Chaing Mai now made into a PWA",
+  "main": "src/index.js",
+  "repository": "https://github.com/serranoarevalo/nomadguide-cm-pwa",
+  "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel --open index.html"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^3.2.3"
+  }
+}
