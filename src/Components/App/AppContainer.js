@@ -1,17 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import AppPresenter from "./AppPresenter";
 
 const Categories = [
   {
     name: "Preparation",
-    description: "Prepare your nice trip",
-    background: "category.jpg"
+    description: "Be prepared",
+    background: "categories/category.jpg"
   }
 ];
 
-class AppContainer extends React.Component {
+class AppContainer extends Component {
+  static propTypes = {};
+  state = {};
   render() {
-    return <AppPresenter categories={Categories} />;
+    return <AppPresenter categories={Categories} {...this.state} />;
   }
 }
 
