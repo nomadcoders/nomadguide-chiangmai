@@ -1391,6 +1391,10 @@ styled-components@^3.2.3:
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
 
+styled-reset@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/styled-reset/-/styled-reset-1.2.0.tgz#598e5c3778d240bad3d3701a46793144df8498e8"
+
 stylis-rule-sheet@^0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stylis-rule-sheet/-/stylis-rule-sheet-0.0.10.tgz#44e64a2b076643f4b52e5ff71efc04d8c3c4a430"

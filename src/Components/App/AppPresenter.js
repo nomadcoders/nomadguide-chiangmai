@@ -5,7 +5,13 @@ import Categories from "Routes/Categories";
 
 const AppPresenter = ({ categories }) => (
   <HashRouter>
-    <Switch />
+    <Switch>
+      <Route
+        exact
+        path="/"
+        render={() => <Categories categories={categories} />}
+      />
+    </Switch>
   </HashRouter>
 );
 

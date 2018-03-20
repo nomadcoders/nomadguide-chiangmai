@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import CategoriesPresenter from "./CategoriesPresenter";
 
 class CategoriesContainer extends Component {
-  static propTypes = {};
+  static propTypes = {
+    categories: PropTypes.array.isRequired
+  };
   state = {};
   render() {
-    return <CategoriesPresenter {...this.state} />;
+    const { categories } = this.props;
+    return <CategoriesPresenter categories={categories} {...this.state} />;
   }
 }
 
