@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import AppPresenter from "./AppPresenter";
 import { injectGlobal } from "styled-components";
+import Categories from "../../content/categories";
 
 const baseStyles = () => injectGlobal`
   ${require("../../reset.css")};
   ${require("gestalt/dist/gestalt.css")};
-`;
-
-const Categories = [
-  {
-    name: "Preparation",
-    description: "Be prepared",
-    background: "categories/category.jpg"
+  body{
+    margin-top:60px;
   }
-];
+  a{
+    text-decoration:none;
+    color:inherit;
+  }
+`;
 
 class AppContainer extends Component {
   static propTypes = {};

@@ -1,17 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Container } from "gestalt";
+import { Container, Box } from "gestalt";
 import Header from "Components/Header";
+import ContentCard from "Components/ContentCard";
 
 const CategoriesPresenter = ({ categories }) => (
   <Container>
-    <Header title={"Categories"} />
+    <Header title={"Categories"} hasBackButton={false} />
+    <Box justifyContent="center" paddingX={4}>
+      {categories.map((category, index) => (
+        <Container key={index}>
+          <ContentCard
+            name={category.name}
+            description={category.description}
+            photo={category.photo}
+            link={`/categories/${category.name}`}
+          />
+        </Container>
+      ))}
+    </Box>
   </Container>
 );
 
 CategoriesPresenter.propTypes = {
-  categories: PropTypes.array.isRequired
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      photo: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default CategoriesPresenter;

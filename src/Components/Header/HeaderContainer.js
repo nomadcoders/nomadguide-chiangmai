@@ -4,12 +4,19 @@ import HeaderPresenter from "./HeaderPresenter";
 
 class HeaderContainer extends Component {
   static propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    hasBackButton: PropTypes.bool.isRequired
   };
   state = {};
   render() {
-    const { title } = this.props;
-    return <HeaderPresenter title={title} {...this.state} />;
+    const { title, hasBackButton } = this.props;
+    return (
+      <HeaderPresenter
+        title={title}
+        hasBackButton={hasBackButton}
+        {...this.state}
+      />
+    );
   }
 }
 

@@ -4,7 +4,13 @@ import CategoriesPresenter from "./CategoriesPresenter";
 
 class CategoriesContainer extends Component {
   static propTypes = {
-    categories: PropTypes.array.isRequired
+    categories: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        photo: PropTypes.string.isRequired
+      })
+    ).isRequired
   };
   state = {};
   render() {
