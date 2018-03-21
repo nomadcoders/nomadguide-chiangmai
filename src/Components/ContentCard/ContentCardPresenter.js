@@ -19,7 +19,9 @@ const ContentCard = ({ name, description, photo, link }) => (
             <Heading size="xs" bold lang="kr">
               <LinkHeader>{name}</LinkHeader>
             </Heading>
-            <Text>{description}</Text>
+            <Box marginTop={2}>
+              <Text>{description}</Text>
+            </Box>
           </Box>
         </Card>
       </Column>
