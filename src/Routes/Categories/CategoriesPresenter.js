@@ -10,14 +10,13 @@ const CategoriesPresenter = ({ categories }) => (
     <Header title={"Categories"} hasBackButton={false} />
     <Box justifyContent="center" paddingX={4}>
       {categories.map((category, index) => (
-        <Container key={index}>
-          <ContentCard
-            name={category.name}
-            description={category.description}
-            photo={category.photo}
-            link={`/categories/${category.name}`}
-          />
-        </Container>
+        <ContentCard
+          key={index}
+          name={category.name}
+          description={category.description}
+          photo={category.photo}
+          link={`/categories/${category.name}`}
+        />
       ))}
     </Box>
   </Container>

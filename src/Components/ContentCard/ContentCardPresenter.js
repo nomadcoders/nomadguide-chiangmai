@@ -37,9 +37,10 @@ const ContentCard = ({ name, description, photo, link }) => (
 );
 
 ContentCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired
+  name: PropTypes.string,
+  description: PropTypes.string,
+  photo: PropTypes.string,
+  link: PropTypes.string
 };
 
 export default ContentCard;

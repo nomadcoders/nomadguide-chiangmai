@@ -25,21 +25,26 @@ const HeaderPresenter = ({ title, hasBackButton = false, history }) => (
         alignItems={"center"}
         display={"flex"}
         justifyContent={"center"}
+        position={"relative"}
       >
         {hasBackButton && (
           <Link onClick={() => history.goBack()}>
-            <Box marginRight={1} padding={1}>
+            <Box
+              marginRight={1}
+              padding={1}
+              dangerouslySetInlineStyle={{
+                __style: {
+                  position: "absolute",
+                  left: 0,
+                  top: "15px"
+                }
+              }}
+            >
               <Icon icon="arrow-back" accessibilityLabel={"Go back"} />
             </Box>
           </Link>
         )}
-        <Box
-          color="white"
-          padding={3}
-          dangerouslySetInlineStyle={{
-            __style: { marginRight: "auto", marginLeft: "auto" }
-          }}
-        >
+        <Box color="white" padding={3}>
           <Text align="center" size="lg" bold>
             {title}
           </Text>

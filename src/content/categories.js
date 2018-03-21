@@ -5,7 +5,7 @@ const Categories = [
     photo: require("../assets/categories/category.jpg"),
     articles: [
       {
-        title: "Stuff",
+        name: "Stuff",
         description: "More stuff",
         photo: require("../assets/articles/category.jpg")
       }
@@ -17,7 +17,7 @@ const Categories = [
     photo: require("../assets/categories/category.jpg"),
     articles: [
       {
-        title: "Stuff",
+        name: "Stuff",
         description: "More stuff",
         photo: require("../assets/articles/category.jpg")
       }
