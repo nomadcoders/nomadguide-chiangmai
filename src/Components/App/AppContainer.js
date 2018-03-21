@@ -21,7 +21,14 @@ class AppContainer extends Component {
   state = {};
   render() {
     baseStyles();
-    return <AppPresenter categories={Categories} {...this.state} />;
+    return (
+      <AppPresenter
+        categories={Object.keys(Categories).map(
+          category => Categories[category]
+        )}
+        {...this.state}
+      />
+    );
   }
 }
 

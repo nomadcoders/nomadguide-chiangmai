@@ -1,5 +1,5 @@
-const Categories = [
-  {
+const Categories = {
+  preparation: {
     name: "Preparation",
     description: "Be prepared",
     photo: require("../assets/categories/category.jpg"),
@@ -11,7 +11,7 @@ const Categories = [
       }
     ]
   },
-  {
+  atms: {
     name: "ATMS",
     description: "Get ripped off",
     photo: require("../assets/categories/category.jpg"),
@@ -23,6 +23,6 @@ const Categories = [
       }
     ]
   }
-];
+};
 
 export default Categories;

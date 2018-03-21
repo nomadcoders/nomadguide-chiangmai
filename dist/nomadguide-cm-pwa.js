@@ -34170,25 +34170,28 @@ module.exports="/dist/2c5e4562cb0fb4221bdfc520fd624518.jpg";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var Categories = [{
-  name: "Preparation",
-  description: "Be prepared",
-  photo: require("../assets/categories/category.jpg"),
-  articles: [{
-    name: "Stuff",
-    description: "More stuff",
-    photo: require("../assets/articles/category.jpg")
-  }]
-}, {
-  name: "ATMS",
-  description: "Get ripped off",
-  photo: require("../assets/categories/category.jpg"),
-  articles: [{
-    name: "Stuff",
-    description: "More stuff",
-    photo: require("../assets/articles/category.jpg")
-  }]
-}];
+var Categories = {
+  preparation: {
+    name: "Preparation",
+    description: "Be prepared",
+    photo: require("../assets/categories/category.jpg"),
+    articles: [{
+      name: "Stuff",
+      description: "More stuff",
+      photo: require("../assets/articles/category.jpg")
+    }]
+  },
+  atms: {
+    name: "ATMS",
+    description: "Get ripped off",
+    photo: require("../assets/categories/category.jpg"),
+    articles: [{
+      name: "Stuff",
+      description: "More stuff",
+      photo: require("../assets/articles/category.jpg")
+    }]
+  }
+};
 
 exports.default = Categories;
 },{"../assets/categories/category.jpg":31,"../assets/articles/category.jpg":30}],101:[function(require,module,exports) {
@@ -34518,7 +34521,11 @@ var AppContainer = function (_Component) {
     key: "render",
     value: function render() {
       baseStyles();
-      return _react2.default.createElement(_AppPresenter2.default, _extends({ categories: _categories2.default }, this.state));
+      return _react2.default.createElement(_AppPresenter2.default, _extends({
+        categories: Object.keys(_categories2.default).map(function (category) {
+          return _categories2.default[category];
+        })
+      }, this.state));
     }
   }]);
 
