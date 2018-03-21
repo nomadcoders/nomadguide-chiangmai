@@ -12,10 +12,9 @@ class CategoriesContainer extends Component {
       })
     ).isRequired
   };
-  state = {};
   render() {
     const { categories } = this.props;
-    return <CategoriesPresenter categories={categories} {...this.state} />;
+    return <CategoriesPresenter categories={categories} />;
   }
 }
 

@@ -34085,8 +34085,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require("react");
@@ -34113,17 +34111,9 @@ var CategoriesContainer = function (_Component) {
   _inherits(CategoriesContainer, _Component);
 
   function CategoriesContainer() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, CategoriesContainer);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CategoriesContainer.__proto__ || Object.getPrototypeOf(CategoriesContainer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (CategoriesContainer.__proto__ || Object.getPrototypeOf(CategoriesContainer)).apply(this, arguments));
   }
 
   _createClass(CategoriesContainer, [{
@@ -34131,7 +34121,7 @@ var CategoriesContainer = function (_Component) {
     value: function render() {
       var categories = this.props.categories;
 
-      return _react2.default.createElement(_CategoriesPresenter2.default, _extends({ categories: categories }, this.state));
+      return _react2.default.createElement(_CategoriesPresenter2.default, { categories: categories });
     }
   }]);
 
@@ -34235,17 +34225,19 @@ var CategoryPresenter = function CategoryPresenter(_ref) {
     _gestalt.Container,
     null,
     _react2.default.createElement(_Header2.default, { hasBackButton: true, title: title }),
-    _categories2.default.map(function (category) {
-      return category.articles;
-    }).map(function (article, index) {
-      return _react2.default.createElement(_ContentCard2.default, {
-        key: index,
-        name: article.name,
-        description: article.description,
-        photo: article.photo,
-        link: "/article/" + article.name
-      });
-    })
+    _react2.default.createElement(
+      _gestalt.Box,
+      { justifyContent: "center", paddingX: 4 },
+      _categories2.default[title.toLowerCase()].articles.map(function (article, index) {
+        return _react2.default.createElement(_ContentCard2.default, {
+          key: index,
+          name: article.name,
+          description: article.description,
+          photo: article.photo,
+          link: "/articles/" + article.name
+        });
+      })
+    )
   );
 };
 
@@ -34260,8 +34252,6 @@ exports.default = CategoryPresenter;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -34289,17 +34279,9 @@ var CategoryContainer = function (_Component) {
   _inherits(CategoryContainer, _Component);
 
   function CategoryContainer() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, CategoryContainer);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = CategoryContainer.__proto__ || Object.getPrototypeOf(CategoryContainer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+    return _possibleConstructorReturn(this, (CategoryContainer.__proto__ || Object.getPrototypeOf(CategoryContainer)).apply(this, arguments));
   }
 
   _createClass(CategoryContainer, [{
@@ -34307,14 +34289,13 @@ var CategoryContainer = function (_Component) {
     value: function render() {
       var params = this.props.match.params;
 
-      return _react2.default.createElement(_CategoryPresenter2.default, _extends({ title: params.name }, this.state));
+      return _react2.default.createElement(_CategoryPresenter2.default, { title: params.name });
     }
   }]);
 
   return CategoryContainer;
 }(_react.Component);
 
-CategoryContainer.propTypes = {};
 exports.default = CategoryContainer;
 },{"react":8,"prop-types":37,"./CategoryPresenter":101}],33:[function(require,module,exports) {
 "use strict";
@@ -34330,7 +34311,114 @@ var _CategoryContainer2 = _interopRequireDefault(_CategoryContainer);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _CategoryContainer2.default;
-},{"./CategoryContainer":90}],25:[function(require,module,exports) {
+},{"./CategoryContainer":90}],123:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = require("styled-components");
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _gestalt = require("gestalt");
+
+var _Header = require("../../Components/Header");
+
+var _Header2 = _interopRequireDefault(_Header);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ArticlePresenter = function ArticlePresenter(_ref) {
+  var title = _ref.title;
+  return _react2.default.createElement(
+    _gestalt.Container,
+    null,
+    _react2.default.createElement(_Header2.default, { title: title, hasBackButton: true }),
+    _react2.default.createElement(_gestalt.Box, { justifyContent: "center", paddingX: 4 })
+  );
+};
+
+ArticlePresenter.propTypes = {
+  title: _propTypes2.default.string.isRequired
+};
+
+exports.default = ArticlePresenter;
+},{"react":8,"prop-types":37,"styled-components":38,"gestalt":112,"../../Components/Header":104}],122:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require("prop-types");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _ArticlePresenter = require("./ArticlePresenter");
+
+var _ArticlePresenter2 = _interopRequireDefault(_ArticlePresenter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ArticleContainer = function (_Component) {
+  _inherits(ArticleContainer, _Component);
+
+  function ArticleContainer() {
+    _classCallCheck(this, ArticleContainer);
+
+    return _possibleConstructorReturn(this, (ArticleContainer.__proto__ || Object.getPrototypeOf(ArticleContainer)).apply(this, arguments));
+  }
+
+  _createClass(ArticleContainer, [{
+    key: "render",
+    value: function render() {
+      var params = this.props.match.params;
+
+      return _react2.default.createElement(_ArticlePresenter2.default, { title: params.name });
+    }
+  }]);
+
+  return ArticleContainer;
+}(_react.Component);
+
+exports.default = ArticleContainer;
+},{"react":8,"prop-types":37,"./ArticlePresenter":123}],121:[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ArticleContainer = require("./ArticleContainer");
+
+var _ArticleContainer2 = _interopRequireDefault(_ArticleContainer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _ArticleContainer2.default;
+},{"./ArticleContainer":122}],25:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34355,6 +34443,10 @@ var _Category = require("../../Routes/Category");
 
 var _Category2 = _interopRequireDefault(_Category);
 
+var _Article = require("../../Routes/Article");
+
+var _Article2 = _interopRequireDefault(_Article);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppPresenter = function AppPresenter(_ref) {
@@ -34372,7 +34464,8 @@ var AppPresenter = function AppPresenter(_ref) {
           return _react2.default.createElement(_Categories2.default, { categories: categories });
         }
       }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: "/categories/:name", component: _Category2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: "/categories/:name", component: _Category2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: "/articles/:name", component: _Article2.default })
     )
   );
 };
@@ -34382,7 +34475,7 @@ AppPresenter.propTypes = {
 };
 
 exports.default = AppPresenter;
-},{"react":8,"prop-types":37,"react-router-dom":40,"../../Routes/Categories":34,"../../Routes/Category":33}],32:[function(require,module,exports) {
+},{"react":8,"prop-types":37,"react-router-dom":40,"../../Routes/Categories":34,"../../Routes/Category":33,"../../Routes/Article":121}],32:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -34566,7 +34659,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById("react"));
-},{"react":8,"react-dom":9,"./Components/App":6}],120:[function(require,module,exports) {
+},{"react":8,"react-dom":9,"./Components/App":6}],124:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -34689,5 +34782,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[120,4])
+},{}]},{},[124,4])
 //# sourceMappingURL=/dist/nomadguide-cm-pwa.map
