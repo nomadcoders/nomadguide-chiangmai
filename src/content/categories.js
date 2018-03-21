@@ -1,7 +1,7 @@
 const Categories = {
   준비사항: {
     name: "준비사항",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/preparation.jpg"),
     description:
       "떠나기 전에 알아둘 것. 비자, 환전, 날씨, 도착 직후 심카드 구입까지.",
     articles: [
@@ -34,7 +34,7 @@ const Categories = {
   },
   교통수단: {
     name: "교통수단",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/transportation.jpg"),
     description: "우버, 툭툭, 스쿠터 렌탈은 이렇게.",
     articles: [
       {
@@ -61,7 +61,7 @@ const Categories = {
   },
   "집 구하기": {
     name: "집 구하기",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/housing.jpg"),
     description: "어느 동네에 살아야 할까요. 나에게 맞는 집을 찾는 기술.",
     articles: [
       {
@@ -98,7 +98,7 @@ const Categories = {
   },
   먹기: {
     name: "먹기",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/food.jpg"),
     description: "어디서 무엇을 먹을까. 매일 건강하게 잘 먹기위한 가이드.",
     articles: [
       {
@@ -125,7 +125,7 @@ const Categories = {
   },
   일하기: {
     name: "일하기",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/work.jpg"),
     description: "코워킹 스페이스, 일하기 좋은 카페 모음.",
     articles: [
       {
@@ -142,7 +142,7 @@ const Categories = {
   },
   커뮤니티: {
     name: "커뮤니티",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/community.jpg"),
     description: "밋업, 이벤트, 모임에서 좋은 사람들 만나고, 배우기.",
     articles: [
       {
@@ -169,7 +169,7 @@ const Categories = {
   },
   "노마드 꿀팁": {
     name: "노마드 꿀팁",
-    photo: require("../assets/categories/category.jpg"),
+    photo: require("../assets/categories/tips.jpg"),
     description: "기본 태국어, 병원, 한달살기 비용 등등.",
     articles: [
       {
