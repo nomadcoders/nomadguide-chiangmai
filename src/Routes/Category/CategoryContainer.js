@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import CategoryPresenter from "./CategoryPresenter";
 
 class CategoryContainer extends Component {

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { Box, Container, Heading, Text, Icon } from "gestalt";
+import { Box, Container, Text, Icon } from "gestalt";
 import { withRouter } from "react-router-dom";
 
 const Fixed = styled.div`

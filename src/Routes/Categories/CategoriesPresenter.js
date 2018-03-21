@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import { Container, Box } from "gestalt";
 import Header from "Components/Header";
 import ContentCard from "Components/ContentCard";
