@@ -8,6 +8,7 @@ import Simcard from "content/Simcard";
 import Uber from "content/Uber";
 import TukTuk from "content/TukTuk";
 import Scooter from "content/Scooter";
+import Notice from "content/Notice";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -27,6 +28,8 @@ const ArticlePresenter = ({ title }) => {
       return <TukTuk />;
     case "스쿠터 렌탈":
       return <Scooter />;
+    case "유의사항":
+      return <Notice />;
     default:
       break;
   }
@@ -41,7 +44,8 @@ ArticlePresenter.propTypes = {
     "심카드",
     "우버 - 그렙",
     "쏭태우 - 툭툭",
-    "스쿠터 렌탈"
+    "스쿠터 렌탈",
+    "유의사항"
   ])
 };
 
