@@ -14,6 +14,7 @@ import Condo from "content/Condo";
 import Apartment from "content/Apartment";
 import House from "content/House";
 import Checklist from "content/Checklist";
+import Links from "content/Links";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -45,6 +46,8 @@ const ArticlePresenter = ({ title }) => {
       return <House />;
     case "체크할 사항":
       return <Checklist />;
+    case "유용한 링크":
+      return <Links />;
     default:
       break;
   }
@@ -64,7 +67,8 @@ ArticlePresenter.propTypes = {
     "지도",
     "아파트",
     "주택",
-    "체크할 사항"
+    "체크할 사항",
+    "유용한 링크"
   ])
 };
 
