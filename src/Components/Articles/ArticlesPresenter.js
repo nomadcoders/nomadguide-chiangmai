@@ -15,6 +15,21 @@ import Apartment from "content/Apartment";
 import House from "content/House";
 import Checklist from "content/Checklist";
 import Links from "content/Links";
+import Restaurants from "content/Restaurants";
+import LocalShops from "content/LocalShops";
+import Supermarket from "content/Supermarket";
+import Market from "content/Market";
+import Coworking from "content/Coworking";
+import Cafe from "content/Cafe";
+import NomadCommunity from "content/NomadCommunity";
+import YogaCommunity from "content/YogaCommunity";
+import DevCommunity from "content/DevCommunity";
+import OtherCommunity from "content/OtherCommunity";
+import Basic from "content/Basic";
+import Monthly from "content/Monthly";
+import Hospital from "content/Hospital";
+import Cost from "content/Cost";
+import Us from "content/Us";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -48,6 +63,36 @@ const ArticlePresenter = ({ title }) => {
       return <Checklist />;
     case "유용한 링크":
       return <Links />;
+    case "레스토랑":
+      return <Restaurants />;
+    case "현지 식당":
+      return <LocalShops />;
+    case "슈퍼마켓":
+      return <Supermarket />;
+    case "마켓":
+      return <Market />;
+    case "코워킹 스페이스":
+      return <Coworking />;
+    case "카페":
+      return <Cafe />;
+    case "노마드 커뮤니티":
+      return <NomadCommunity />;
+    case "개발자 커뮤니티":
+      return <DevCommunity />;
+    case "요가 커뮤니티":
+      return <YogaCommunity />;
+    case "그 외":
+      return <OtherCommunity />;
+    case "기본 태국어":
+      return <Basic />;
+    case "월별 치앙마이 즐기기":
+      return <Monthly />;
+    case "병원":
+      return <Hospital />;
+    case "한달살기 비용":
+      return <Cost />;
+    case "마지막으로":
+      return <Us />;
     default:
       break;
   }
@@ -68,7 +113,22 @@ ArticlePresenter.propTypes = {
     "아파트",
     "주택",
     "체크할 사항",
-    "유용한 링크"
+    "유용한 링크",
+    "레스토랑",
+    "현지 식당",
+    "슈퍼마켓",
+    "마켓",
+    "코워킹 스페이스",
+    "카페",
+    "노마드 커뮤니티",
+    "개발자 커뮤니티",
+    "요가 커뮤니티",
+    "그 외",
+    "기본 태국어",
+    "월별 치앙마이 즐기기",
+    "병원",
+    "한달살기 비용",
+    "마지막으로"
   ])
 };
 
