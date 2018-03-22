@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Mask } from "gestalt";
+import { Mask, Link } from "gestalt";
 
 export const Image = styled.div`
   background-image: url(${props => props.background});
@@ -14,4 +14,14 @@ export const MaskImage = ({ photo }) => (
   <Mask shape="rounded">
     <Image background={photo} />
   </Mask>
+);
+
+const Underline = styled.span`
+  text-decoration: underline;
+`;
+
+export const SLink = ({ href, children }) => (
+  <Underline>
+    <Link href={href}>{children}</Link>
+  </Underline>
 );

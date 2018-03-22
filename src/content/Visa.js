@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { MaskImage } from "Components/Shared";
 import { Heading, Box, Text } from "gestalt";
-const Stuff = () => (
+
+const Visa = () => (
   <Fragment>
     <MaskImage photo={require("../assets/preparation/01.jpg")} />
     <Box marginTop={5}>
@@ -57,4 +58,4 @@ const Stuff = () => (
   </Fragment>
 );
 
-export default Stuff;
+export default Visa;
