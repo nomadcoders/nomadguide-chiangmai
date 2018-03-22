@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { MaskImage, SLink } from "Components/Shared";
 import { Heading, Box, Text } from "gestalt";
 
-const ATMS = () => (
+const Weather = () => (
   <Fragment>
     <MaskImage photo={require("../assets/preparation/03.jpg")} />
     <Box marginTop={5}>
@@ -32,8 +32,7 @@ const ATMS = () => (
         긴바지도 챙겨가자.
       </Text>
     </Box>
-    <Box marginTop={5} marginBottom={5} />
   </Fragment>
 );
 
-export default ATMS;
+export default Weather;
