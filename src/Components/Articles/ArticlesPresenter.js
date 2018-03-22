@@ -11,6 +11,7 @@ import Scooter from "content/Scooter";
 import Notice from "content/Notice";
 import Map from "content/Map";
 import Condo from "content/Condo";
+import Apartment from "content/Apartment";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -36,6 +37,8 @@ const ArticlePresenter = ({ title }) => {
       return <Map />;
     case "콘도":
       return <Condo />;
+    case "아파트":
+      return <Apartment />;
     default:
       break;
   }
@@ -52,7 +55,8 @@ ArticlePresenter.propTypes = {
     "쏭태우 - 툭툭",
     "스쿠터 렌탈",
     "유의사항",
-    "지도"
+    "지도",
+    "아파트"
   ])
 };
 
