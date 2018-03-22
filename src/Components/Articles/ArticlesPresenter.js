@@ -10,6 +10,7 @@ import TukTuk from "content/TukTuk";
 import Scooter from "content/Scooter";
 import Notice from "content/Notice";
 import Map from "content/Map";
+import Condo from "content/Condo";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -33,6 +34,8 @@ const ArticlePresenter = ({ title }) => {
       return <Notice />;
     case "지도":
       return <Map />;
+    case "콘도":
+      return <Condo />;
     default:
       break;
   }
