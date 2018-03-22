@@ -4,6 +4,7 @@ import Visa from "content/Visa";
 import ATMS from "content/ATMS";
 import Weather from "content/Weather";
 import Airport from "content/Airport";
+import Simcard from "content/Simcard";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -15,13 +16,15 @@ const ArticlePresenter = ({ title }) => {
       return <Weather />;
     case "도착 직후":
       return <Airport />;
+    case "심카드":
+      return <Simcard />;
     default:
       break;
   }
 };
 
 ArticlePresenter.propTypes = {
-  title: PropTypes.oneOf(["비자", "환전", "날씨", "도착 직후"])
+  title: PropTypes.oneOf(["비자", "환전", "날씨", "도착 직후", "심카드"])
 };
 
 export default ArticlePresenter;
