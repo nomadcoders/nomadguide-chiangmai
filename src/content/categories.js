@@ -82,7 +82,7 @@ const Categories = {
       {
         name: "주택",
         description: "자연과 함께하는 조용한 주택 단지",
-        photo: require("../assets/housing/04.jpg")
+        photo: require("../assets/housing/06.jpg")
       },
       {
         name: "체크할 사항",
@@ -92,7 +92,7 @@ const Categories = {
       {
         name: "유용한 링크",
         description: "콘도 및 아파트 매물, 시세 확인",
-        photo: require("../assets/housing/06.jpg")
+        photo: require("../assets/housing/04.jpg")
       }
     ]
   },
