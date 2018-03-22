@@ -13,6 +13,7 @@ import Map from "content/Map";
 import Condo from "content/Condo";
 import Apartment from "content/Apartment";
 import House from "content/House";
+import Checklist from "content/Checklist";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -42,6 +43,8 @@ const ArticlePresenter = ({ title }) => {
       return <Apartment />;
     case "주택":
       return <House />;
+    case "체크할 사항":
+      return <Checklist />;
     default:
       break;
   }
@@ -60,7 +63,8 @@ ArticlePresenter.propTypes = {
     "유의사항",
     "지도",
     "아파트",
-    "주택"
+    "주택",
+    "체크할 사항"
   ])
 };
 
