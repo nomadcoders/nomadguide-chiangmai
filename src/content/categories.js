@@ -38,7 +38,7 @@ const Categories = {
     description: "우버, 툭툭, 스쿠터 렌탈은 이렇게.",
     articles: [
       {
-        name: "우버/그렙",
+        name: "우버 - 그렙",
         description: "우버 사용의 팁",
         photo: require("../assets/transportation/01.jpg")
       },

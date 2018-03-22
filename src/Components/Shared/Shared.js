@@ -5,7 +5,7 @@ import { Mask, Link } from "gestalt";
 export const Image = styled.div`
   background-image: url(${props => props.background});
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   width: 100%;
   height: 200px;
 `;
@@ -16,7 +16,7 @@ export const MaskImage = ({ photo }) => (
   </Mask>
 );
 
-const Underline = styled.span`
+export const Underline = styled.span`
   text-decoration: underline;
 `;
 

@@ -1,2 +1,2 @@
-import { MaskImage, SLink } from "./Shared";
-export { MaskImage, SLink };
+import { MaskImage, SLink, Underline } from "./Shared";
+export { MaskImage, SLink, Underline };
