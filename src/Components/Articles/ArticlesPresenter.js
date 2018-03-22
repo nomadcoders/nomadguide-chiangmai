@@ -9,6 +9,7 @@ import Uber from "content/Uber";
 import TukTuk from "content/TukTuk";
 import Scooter from "content/Scooter";
 import Notice from "content/Notice";
+import Map from "content/Map";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -30,6 +31,8 @@ const ArticlePresenter = ({ title }) => {
       return <Scooter />;
     case "유의사항":
       return <Notice />;
+    case "지도":
+      return <Map />;
     default:
       break;
   }
@@ -45,7 +48,8 @@ ArticlePresenter.propTypes = {
     "우버 - 그렙",
     "쏭태우 - 툭툭",
     "스쿠터 렌탈",
-    "유의사항"
+    "유의사항",
+    "지도"
   ])
 };
 

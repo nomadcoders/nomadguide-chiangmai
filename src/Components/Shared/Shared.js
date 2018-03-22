@@ -25,3 +25,7 @@ export const SLink = ({ href, children }) => (
     <Link href={href}>{children}</Link>
   </Underline>
 );
+
+export const VImage = styled.img`
+  max-width: 100%;
+`;
