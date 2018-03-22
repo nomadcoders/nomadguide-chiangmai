@@ -6,6 +6,8 @@ import Weather from "content/Weather";
 import Airport from "content/Airport";
 import Simcard from "content/Simcard";
 import Uber from "content/Uber";
+import TukTuk from "content/TukTuk";
+import Scooter from "content/Scooter";
 
 const ArticlePresenter = ({ title }) => {
   switch (title.toLowerCase()) {
@@ -21,6 +23,10 @@ const ArticlePresenter = ({ title }) => {
       return <Simcard />;
     case "우버 - 그렙":
       return <Uber />;
+    case "쏭태우 - 툭툭":
+      return <TukTuk />;
+    case "스쿠터 렌탈":
+      return <Scooter />;
     default:
       break;
   }
@@ -33,7 +39,9 @@ ArticlePresenter.propTypes = {
     "날씨",
     "도착 직후",
     "심카드",
-    "우버 - 그렙"
+    "우버 - 그렙",
+    "쏭태우 - 툭툭",
+    "스쿠터 렌탈"
   ])
 };
 

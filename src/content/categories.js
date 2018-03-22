@@ -43,7 +43,7 @@ const Categories = {
         photo: require("../assets/transportation/01.jpg")
       },
       {
-        name: "쏭태우/툭툭",
+        name: "쏭태우 - 툭툭",
         description: "쏭태우와 툭툭 타는 법",
         photo: require("../assets/transportation/02.jpg")
       },

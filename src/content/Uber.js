@@ -18,7 +18,6 @@ const Uber = () => (
         쓰이고 있다.
       </Text>
     </Box>
-    <MaskImage photo={require("../assets/articles/uber.jpg")} />
     <Box marginTop={5} marginBottom={5}>
       <Text>
         우버 사용방법은 매우 간단하다. 출발지, 도착지를 입력 후 우버 택시를
