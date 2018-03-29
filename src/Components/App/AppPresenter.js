@@ -6,7 +6,7 @@ import Category from "Routes/Category";
 import Article from "Routes/Article";
 
 const AppPresenter = ({ categories }) => (
-  <HashRouter>
+  <HashRouter onUpdate={() => window.scrollTo(0, 0)}>
     <Switch>
       <Route
         exact

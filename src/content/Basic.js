@@ -35,7 +35,6 @@ export default () => (
           <b>죄송합니다:</b> 커톳 캅/카 있다.
         </li>
         <br />
-        <Text>1개월 월세</Text>
       </Text>
     </Box>
   </Fragment>
