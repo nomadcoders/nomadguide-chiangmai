@@ -4,38 +4,46 @@ import { Heading, Box, Text } from "gestalt";
 
 export default () => (
   <Fragment>
-    <MaskImage photo={require("../assets/housing/06.jpg")} />
+    <MaskImage photo={require("../assets/tips/03.jpg")} />
     <Box marginTop={5} marginBottom={5}>
-      <Heading size="xs">주택</Heading>
+      <Heading size="xs">한달살기 비용</Heading>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        태국 현지인들이 가족 단위로 거주하는 주택을 무반 (Moo Baan)이라고 한다.
-        방 2~4개, 거실, 부엌, 조리시설, 정원, 주차장이 있다. 주택의 경우 최소
-        계약 기간이 6개월이며 위치도 시내에서 떨어진 항동에 위치하여 있다. 가족
-        단위로 치앙마이에 거주하는 외국인들의 경우 국제학교 인근에 있는 주택
-        단지 (village, gated community)에 모여 산다. 주택 단지의 경우 사설
-        경비원 그리고 수영장 및 체육시설을 갖추고 있다. 한 달 렌트비는 계약
-        기간에 따라 상이하나 보통 20,000밧부터 시작한다.
+        생활비의 절반은 결국 집 렌트비용이기에 어느 지역에서 어떤 옵션의 집을
+        구하느냐에 따라서 생활비 역시 천차만별이다. 대략 감을 잡기 위해서 아래와
+        같이 비용을 계산해보았다.
       </Text>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
         <li>
-          <b>가격대:</b> 최소 20,000 밧 이상.
+          <b>산티탐 콘도:</b> 한 달 10,000밧
         </li>
         <li>
-          <b>시설:</b> 방 (2~4개), 거실, 부엌, 정원 등.
+          <b>오토바이 렌탈:</b> 한 달 2,500밧
         </li>
         <li>
-          <b>지역:</b> 항동.
+          <b>하루 식사:</b> 한끼 평균 100밧 (한 달 9,000밧)
         </li>
         <li>
-          <b>계약기준:</b> 최소 6개월 이상.
+          <b>카페 혹은 코워킹스페이스: </b> 하루 평균 100밧 (한 달 3,000밧)
         </li>
         <li>
-          <b>보증금:</b> 1개월 월세.
+          <b>그외 기타 비용:</b> 한 달 5,000밧
         </li>
+        <Text>
+          <br />
+          <b>한달 약 30,000밧 (한화 약 99만원)</b>
+        </Text>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        생활비는 개인적으로 어디서, 얼마나, 어떻게 생활하는지에 따라서
+        가격차이가 심하다. 필자의 경우 최소 한 달 30만원 정도의 경비로 생활한
+        적도 있다! 그러나 그러한 필자도 치앙마이에 처음 도착한 당시에는 한 달 약
+        100만원 정도를 지출했다.
       </Text>
     </Box>
   </Fragment>
