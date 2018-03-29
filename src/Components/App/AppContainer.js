@@ -10,7 +10,7 @@ const baseStyles = () => injectGlobal`
     margin-top:60px!important;
   }
   a{
-    text-decoration:none;
+    text-decoration:none!important;
     color:inherit;
   }
 `;

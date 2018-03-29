@@ -17,6 +17,13 @@ const CategoriesPresenter = ({ categories }) => (
           link={`/categories/${category.name}`}
         />
       ))}
+      <ContentCard
+        key={999}
+        name={"ABOUT ❤️"}
+        description={"누가, 어떻게, 왜 이걸 만들었나."}
+        photo={require("../../assets/articles/us.jpg")}
+        link={`/categories/About`}
+      />
     </Box>
   </Container>
 );
