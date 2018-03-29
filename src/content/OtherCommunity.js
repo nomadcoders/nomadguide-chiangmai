@@ -4,38 +4,58 @@ import { Heading, Box, Text } from "gestalt";
 
 export default () => (
   <Fragment>
-    <MaskImage photo={require("../assets/housing/06.jpg")} />
+    <MaskImage photo={require("../assets/community/04.jpg")} />
     <Box marginTop={5} marginBottom={5}>
-      <Heading size="xs">주택</Heading>
+      <Heading size="xs">그 외</Heading>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        태국 현지인들이 가족 단위로 거주하는 주택을 무반 (Moo Baan)이라고 한다.
-        방 2~4개, 거실, 부엌, 조리시설, 정원, 주차장이 있다. 주택의 경우 최소
-        계약 기간이 6개월이며 위치도 시내에서 떨어진 항동에 위치하여 있다. 가족
-        단위로 치앙마이에 거주하는 외국인들의 경우 국제학교 인근에 있는 주택
-        단지 (village, gated community)에 모여 산다. 주택 단지의 경우 사설
-        경비원 그리고 수영장 및 체육시설을 갖추고 있다. 한 달 렌트비는 계약
-        기간에 따라 상이하나 보통 20,000밧부터 시작한다.
+        치앙마이에는 그 외에도 다양한 종류의 커뮤니티가 존재한다. 무에타이,
+        퍼머컬쳐, 쿠킹, 바이크 라이딩 등등 치앙마이가 제공하는 다양한 액티비티,
+        자연, 문화가 그만큼 다양하기에 이를 쫓아 여러 커뮤니티가 자유롭게
+        형성되어있는 것. 새로운 것도 배우고, 친구도 사귀는 것을 강력 추천한다.
+      </Text>
+    </Box>
+    <MaskImage photo={require("../assets/articles/farm.jpg")} />
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>무에타이, Team Quest Chiang Mai:</b>
+        <br />
+        <SLink href="http://tqmmathailand.com/">Website</SLink>
       </Text>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        <li>
-          <b>가격대:</b> 최소 20,000 밧 이상.
-        </li>
-        <li>
-          <b>시설:</b> 방 (2~4개), 거실, 부엌, 정원 등.
-        </li>
-        <li>
-          <b>지역:</b> 항동.
-        </li>
-        <li>
-          <b>계약기준:</b> 최소 6개월 이상.
-        </li>
-        <li>
-          <b>보증금:</b> 1개월 월세.
-        </li>
+        <b>퍼머컬쳐, 유기농 오가닉, Panya Project:</b>
+        <br />
+        <SLink href="http://www.panyaproject.org/">Website</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>North Gate Jazz Bar, 치앙마이 최고의 재즈 바:</b>
+        <br />
+        <SLink href="https://www.facebook.com/northgate.jazzcoop/">
+          Website
+        </SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Roots Rock Reggae Bar, 레게, 히피, 춤:</b>
+        <br />
+        <SLink href="https://www.facebook.com/RootsRockReggaeCM/">
+          Website
+        </SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>철학, Socrates Cafe:</b>
+        <br />
+        <SLink href="https://www.meetup.com/Socrates-Cafe-Chiang-Mai/">
+          Website
+        </SLink>
       </Text>
     </Box>
   </Fragment>
