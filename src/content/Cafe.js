@@ -4,38 +4,112 @@ import { Heading, Box, Text } from "gestalt";
 
 export default () => (
   <Fragment>
-    <MaskImage photo={require("../assets/housing/06.jpg")} />
+    <MaskImage photo={require("../assets/work/02.jpg")} />
     <Box marginTop={5} marginBottom={5}>
-      <Heading size="xs">주택</Heading>
+      <Heading size="xs">카페</Heading>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        태국 현지인들이 가족 단위로 거주하는 주택을 무반 (Moo Baan)이라고 한다.
-        방 2~4개, 거실, 부엌, 조리시설, 정원, 주차장이 있다. 주택의 경우 최소
-        계약 기간이 6개월이며 위치도 시내에서 떨어진 항동에 위치하여 있다. 가족
-        단위로 치앙마이에 거주하는 외국인들의 경우 국제학교 인근에 있는 주택
-        단지 (village, gated community)에 모여 산다. 주택 단지의 경우 사설
-        경비원 그리고 수영장 및 체육시설을 갖추고 있다. 한 달 렌트비는 계약
-        기간에 따라 상이하나 보통 20,000밧부터 시작한다.
+        코워킹 스페이스는 아니지만 거의 준하는 시설을 갖춘 ‘일하기 좋은 카페' 가
+        엄청나게 많다. (정말 어마무시하게 많음) 안정적인 속도의 인터넷, 오래
+        앉아 있어도 편한 의자와 테이블 높이, 적절한 퀄리티의 커피를 갖춘 일하기
+        좋은 카페를 소개한다.
+      </Text>
+    </Box>
+    <MaskImage photo={require("../assets/articles/cafe.jpg")} />
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Cafe de Innova:</b>
+        <Text inline={false}>
+          <br />
+          Innovative Village라는 스타트업 빌리지에 위치한 카페. 조용하고, 일하기
+          좋은 테이블, 의자, 인터넷 속도, 맛있는 커피를 갖춘 최고의 일하기 좋은
+          카페
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/e21QpwXkLnD2">Map</SLink>
       </Text>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        <li>
-          <b>가격대:</b> 최소 20,000 밧 이상.
-        </li>
-        <li>
-          <b>시설:</b> 방 (2~4개), 거실, 부엌, 정원 등.
-        </li>
-        <li>
-          <b>지역:</b> 항동.
-        </li>
-        <li>
-          <b>계약기준:</b> 최소 6개월 이상.
-        </li>
-        <li>
-          <b>보증금:</b> 1개월 월세.
-        </li>
+        <b>PI-CHA-NON CAFE:</b>
+        <Text inline={false}>
+          <br />
+          갤러리 카페, 조용하고 아름답다. 인터넷 속도가 빠르고 커피도 맛있다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/Ls8FUJ2U51E2">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Shewitkhontammada Coffee House:</b>
+        <Text inline={false}>
+          <br />
+          님만에서 일을 하게 된다면 방문하는 카페. 비싸지만 그만큼 넓고
+          쾌적하다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/JeGJr8u8Mu12">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Artisan Cafe:</b>
+        <Text inline={false}>
+          <br />
+          올드시티 근방에서 일하기 좋은 카페. 디자인이 아름답고. 커피가 정말
+          맛있다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/qQTH8YZ6gU72">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>My Secret Cafe In Town:</b>
+        <Text inline={false}>
+          <br />
+          올드시티에서 일하기 좋은 카페, 약간 시끄럽지만 저녁 늦게까지 일할 수
+          있다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/qQTH8YZ6gU72">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Wawee Coffee:</b>
+        <Text inline={false}>
+          <br />
+          치앙마이의 스타벅스, 치앙마이에만 여러 곳의 분점을 갖고있다. 쾌적하고
+          일하기 편하다.
+        </Text>
+        <br />
+        <SLink href="http://www.waweecoffee.com/waweebranches-2">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Somkiat Cafe:</b>
+        <Text inline={false}>
+          <br />
+          반깡왓, 왓우몽 근처의 자연에 둘러싸인 카페. 커피도, 밥도 맛있다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/tjigbx56sDu">Map</SLink>
+      </Text>
+    </Box>
+    <Box marginTop={5} marginBottom={5}>
+      <Text>
+        <b>Daddy's Antique cafe and restaurant:</b>
+        <Text inline={false}>
+          <br />
+          항동 근처 매우 아름다운 카페 겸 레스토랑. 가격이 비싸지만 그만큼
+          맛있고 고급지다.
+        </Text>
+        <br />
+        <SLink href="https://goo.gl/maps/NbsWpUcUfbJ">Map</SLink>
       </Text>
     </Box>
   </Fragment>
