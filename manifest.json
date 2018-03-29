@@ -1,0 +1,20 @@
+{
+  "short_name": "Nomad Guide: Chiang Mai",
+  "name": "Nomad Guide: Chiang Mai",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon310x310.png",
+      "sizes": "192x192 128x128 114x114 196x196 144x144 150x150",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#555",
+  "background_color": "#ffffff"
+}
