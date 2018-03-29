@@ -4,7 +4,7 @@ import { Heading, Box, Text } from "gestalt";
 
 export default () => (
   <Fragment>
-    <MaskImage photo={require("../assets/housing/06.jpg")} />
+    <MaskImage photo={require("../assets/community/01.jpg")} />
     <Box marginTop={5} marginBottom={5}>
       <Heading size="xs">주택</Heading>
     </Box>
