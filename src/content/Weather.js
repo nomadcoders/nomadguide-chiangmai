@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { MaskImage, SLink } from "Components/Shared";
+import { MaskImage } from "Components/Shared";
 import { Heading, Box, Text } from "gestalt";
 
 const Weather = () => (
