@@ -4,38 +4,43 @@ import { Heading, Box, Text } from "gestalt";
 
 export default () => (
   <Fragment>
-    <MaskImage photo={require("../assets/housing/06.jpg")} />
+    <MaskImage photo={require("../assets/tips/05.jpg")} />
     <Box marginTop={5} marginBottom={5}>
-      <Heading size="xs">주택</Heading>
+      <Heading size="xs">월별 치앙마이 즐기기</Heading>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        태국 현지인들이 가족 단위로 거주하는 주택을 무반 (Moo Baan)이라고 한다.
-        방 2~4개, 거실, 부엌, 조리시설, 정원, 주차장이 있다. 주택의 경우 최소
-        계약 기간이 6개월이며 위치도 시내에서 떨어진 항동에 위치하여 있다. 가족
-        단위로 치앙마이에 거주하는 외국인들의 경우 국제학교 인근에 있는 주택
-        단지 (village, gated community)에 모여 산다. 주택 단지의 경우 사설
-        경비원 그리고 수영장 및 체육시설을 갖추고 있다. 한 달 렌트비는 계약
-        기간에 따라 상이하나 보통 20,000밧부터 시작한다.
+        <li>
+          <b>1월:</b> 새해맞이 타페게이트에서 등불 날리기
+        </li>
+        <li>
+          <b>2월:</b> 꽃 축제
+        </li>
+        <li>
+          <b>4월:</b> 쏭크란 (Songkran) 물 축제
+        </li>
+        <li>
+          <b>5월:</b> 두리안 (Durian 열대과일) 축제
+        </li>
+        <li>
+          <b>6월:</b> 인타낀 (Inthakin) 불교 페스티벌
+        </li>
+        <li>
+          <b>10월:</b> 채식주의자 페스티벌
+        </li>
+        <li>
+          <b>11월:</b> 러이끄라통 (Loi Krathong) 등불 축제
+        </li>
+        <li>
+          <b>12월:</b> 님만해민 아트 페스티벌 (NAP)
+        </li>
       </Text>
     </Box>
     <Box marginTop={5} marginBottom={5}>
       <Text>
-        <li>
-          <b>가격대:</b> 최소 20,000 밧 이상.
-        </li>
-        <li>
-          <b>시설:</b> 방 (2~4개), 거실, 부엌, 정원 등.
-        </li>
-        <li>
-          <b>지역:</b> 항동.
-        </li>
-        <li>
-          <b>계약기준:</b> 최소 6개월 이상.
-        </li>
-        <li>
-          <b>보증금:</b> 1개월 월세.
-        </li>
+        치앙마이를 방문하기에 최적의 시즌은 11월 ~ 2월이다. 반대로 치앙마이에
+        오지 말라고 당부하고 싶은 기간은 버닝 시즌 (농작물을 태우는 연기가
+        극심한 기간)인 3월 그리고 가장 강수량이 많은 8~9월이다.
       </Text>
     </Box>
   </Fragment>

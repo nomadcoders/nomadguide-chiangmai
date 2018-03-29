@@ -180,22 +180,22 @@ const Categories = {
       {
         name: "월별 치앙마이 즐기기",
         description: "4월은 쏭크란, 11월은 러이끄라통!",
-        photo: require("../assets/tips/02.jpg")
+        photo: require("../assets/tips/05.jpg")
       },
       {
         name: "병원",
         description: "그냥 아프지 말자",
-        photo: require("../assets/tips/03.jpg")
+        photo: require("../assets/tips/02.jpg")
       },
       {
         name: "한달살기 비용",
         description: "대략 한달에 이정도 감안하자",
-        photo: require("../assets/tips/04.jpg")
+        photo: require("../assets/tips/03.jpg")
       },
       {
         name: "마지막으로",
         description: "노마드 가이드를 왜 썼냐면",
-        photo: require("../assets/tips/05.jpg")
+        photo: require("../assets/tips/04.jpg")
       }
     ]
   }
