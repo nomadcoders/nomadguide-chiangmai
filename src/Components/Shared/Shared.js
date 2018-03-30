@@ -13,7 +13,7 @@ export const Image = styled.div`
 
 export const MaskImage = ({ photo }) => (
   <Mask shape="rounded">
-    <LazyLoad height="200">
+    <LazyLoad height={200} offset={100}>
       <Image background={photo} />
     </LazyLoad>
   </Mask>
