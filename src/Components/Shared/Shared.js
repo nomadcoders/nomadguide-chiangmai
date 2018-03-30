@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Mask, Link } from "gestalt";
+import LazyLoad from "react-lazyload";
 
 export const Image = styled.div`
   background-image: url(${props => props.background});
@@ -11,9 +12,11 @@ export const Image = styled.div`
 `;
 
 export const MaskImage = ({ photo }) => (
-  <Mask shape="rounded">
-    <Image background={photo} />
-  </Mask>
+  <LazyLoad>
+    <Mask shape="rounded">
+      <Image background={photo} />
+    </Mask>
+  </LazyLoad>
 );
 
 export const Underline = styled.span`
