@@ -12,11 +12,11 @@ export const Image = styled.div`
 `;
 
 export const MaskImage = ({ photo }) => (
-  <LazyLoad>
-    <Mask shape="rounded">
+  <Mask shape="rounded">
+    <LazyLoad height="200">
       <Image background={photo} />
-    </Mask>
-  </LazyLoad>
+    </LazyLoad>
+  </Mask>
 );
 
 export const Underline = styled.span`
